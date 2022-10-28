@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*选择器{样式}*/
+        /*给谁改样式{改什么样式}*/
+        p {
+            color: red; 
+            /* 修改了文字像素为50px */
+            font-size:50px;
+        }
+        div {
+            color: pink;
+        }
+        /* 上面两个都是标签选择器，无法进行差异化设置 */
+        .red {
+            color: red;
+        }
+        /* 类选择器口诀：点样式定义,结构类（class）调用 ，一个或多个，开发最常用*/
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green ;
+            /* 背景颜色 */
+        }
+        .red2{
+            width: 100px;
+            height: 100px;
+            background-color: red ;
+        }
+        .font35{
+            font-size: 35px;
+        }
+        /* id选择器 */
+        #pink{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>有点意思</p>
+    <p>确实有意思</p>
+    <div>没意思</div>
+    <div>确实没意思</div>
+    <!-- class就是类的意思，将标签放在哪类 -->
+    <ul>
+        <li class="red">稻香</li>
+        <li>晴天</li>
+        <li class="red">反方向的钟</li>
+    </ul>
+    <div class="red">我也想变红</div>
+
+    <!-- 类选择器演示 -->
+    <div class="green">绿色</div>
+    <div class="red2">红色</div>
+    <div class="green">绿色</div>
+
+    <!-- 多类名演示 -->
+    <div class="red font35">周董</div>
+
+    <!-- id选择器展示 -->
+    <div id="pink">迈克尔-杰克逊</div>
+</body>
+</html>
